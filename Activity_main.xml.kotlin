@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DE5886"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Calculator Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp" />
+
+    <!-- Buttons Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="8dp"
+
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="8dp"
+
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Buttons Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:layout_margin="8dp"
+
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            android:layout_margin="8dp"
+
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Result: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
